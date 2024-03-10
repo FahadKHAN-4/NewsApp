@@ -1,9 +1,9 @@
 # Getting Started
-In the project directory, you can run for node modules:
+In the project directory, install node modules via:
 
 ### `npm install`
 
-Runs the app in the development mode.\
+Runs the app in the development mode via:
 
 ### `npm start`
 
