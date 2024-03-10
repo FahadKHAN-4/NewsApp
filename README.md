@@ -9,8 +9,8 @@ Runs the app in the development mode via:
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-
-
+# App Demo
+<img src="./demo.png" title="demo" alt="demo"/>&nbsp;
 
 
 
