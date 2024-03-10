@@ -1,0 +1,14 @@
+.news-item .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .news-item .card-body .card-text {
+    flex-grow: 1;
+    overflow: hidden; /* Add this if you want to hide overflowing text */
+  }
+  
+  .news-item .card-body a {
+    align-self: start; /* Aligns the button to the start (left) */
+    margin-top: auto; /* Pushes the button to the bottom */
+  }
