@@ -49,6 +49,10 @@ const router = createBrowserRouter([
     path: "/technology",
     element: <News category="technology" country="us" />,
   },
+  {
+    path: "/entertainment",
+    element: <News category="entertainment" country="us" />,
+  } 
 ]);
 
 class App extends Component {

@@ -12,3 +12,8 @@
     align-self: start; /* Aligns the button to the start (left) */
     margin-top: auto; /* Pushes the button to the bottom */
   }
+
+  .card-text custom{
+    align-self: start; /* Aligns the button to the start (left) */
+    margin-top: auto; /* Pushes the button to the bottom */
+  }
