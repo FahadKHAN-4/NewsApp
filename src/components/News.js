@@ -7,7 +7,7 @@ export default class News extends Component {
 
   static defaultProps = {
     country: "us",
-    category: "business"
+    category: "general"
   }
 
   static propTypes = {
@@ -15,14 +15,20 @@ export default class News extends Component {
     category: PropTypes.string
   }
 
-  constructor(){
-    super();
+  capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
+  constructor(props){
+    super(props);
     this.state = {
       articles : [],
       totalResults: 0,
-      page : 0,
+      page : 1,
       loading : false
     }
+
+    document.title = `JustNews - ${this.capitalizeFirstLetter(this.props.category)}`;
   }
 
   async componentDidMount(){
