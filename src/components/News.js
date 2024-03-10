@@ -7,7 +7,7 @@ export default class News extends Component {
 
   static defaultProps = {
     country: "us",
-    category: "buisness"
+    category: "business"
   }
 
   static propTypes = {
