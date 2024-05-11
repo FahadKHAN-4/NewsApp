@@ -53,7 +53,7 @@ export default function News (props) {
         <h1 className='text-center' style={{marginTop: '80px'}}>Top Headlines: {capitalizeFirstLetter(category)}</h1>
         {loading && <Spinner />}
         <InfiniteScroll
-          dataLength={articles.length} 
+          dataLength={articles && articles.length} 
           next={fetchMoreData}
           hasMore={articles.length !== totalResults}
           loader= {loading && <Spinner/>}> 

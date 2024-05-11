@@ -1,5 +1,5 @@
 # Overview
-<img src="./demo-1.png" title="demo" alt="demo"/>&nbsp;
+<img src="./dashboard.png" title="demo" alt="demo"/>&nbsp;
 
 NewsApp is a news only app for various news categories.
 
