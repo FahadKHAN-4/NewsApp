@@ -23,38 +23,79 @@ function App() {
     },
     {
       path: "/business",
-      element: <News setProgress={setProgress} category="business" country="us" />,
+      element: <div>
+        <NavBar />
+        <LoadingBar
+          height={3}
+          color='#f11946'
+          progress={progress}
+        />
+        <News setProgress={setProgress} category="business" country="us" />
+      </div>,
     },
     {
       path: "/health",
-      element: <News setProgress={setProgress} category="health" country="us" />,
+      element: <div>
+        <NavBar />
+        <LoadingBar
+          height={3}
+          color='#f11946'
+          progress={progress}
+        />
+        <News setProgress={setProgress} category="health" country="us" />
+      </div>,
     },
     {
       path: "/science",
-      element: <News setProgress={setProgress} category="science" country="us" />,
+      element: <div>
+        <NavBar />
+        <LoadingBar
+          height={3}
+          color='#f11946'
+          progress={progress}
+        /><News setProgress={setProgress} category="science" country="us" />
+      </div>,
     },
     {
       path: "/sports",
-      element: <News setProgress={setProgress} category="sports" country="us" />,
+      element: <div>
+        <NavBar />
+        <LoadingBar
+          height={3}
+          color='#f11946'
+          progress={progress}
+        />
+        <News setProgress={setProgress} category="sports" country="us" />
+      </div>,
     },
     {
       path: "/technology",
-      element: <News setProgress={setProgress} category="technology" country="us" />,
+      element: <div>
+        <NavBar />
+        <LoadingBar
+          height={3}
+          color='#f11946'
+          progress={progress}
+        />
+        <News setProgress={setProgress} category="technology" country="us" />
+      </div>,
     },
     {
       path: "/entertainment",
-      element: <News setProgress={setProgress} category="entertainment" country="us" />,
+      element: <div>
+        <NavBar />
+        <LoadingBar
+          height={3}
+          color='#f11946'
+          progress={progress}
+        />
+        <News setProgress={setProgress} category="entertainment" country="us" />
+      </div>,
     }
   ]);
 
   return (
     <div>
-      {/* <NavBar />
-            <LoadingBar
-                height={3}
-                color='#f11946'
-                progress={progress}
-            /> */}
       <RouterProvider router={router} />
     </div>
   );
