@@ -59,7 +59,7 @@ export default function News (props) {
           loader= {loading && <Spinner/>}> 
 
           <div className='row'>
-              {articles.map((element)=>{
+              {articles && articles.map((element)=>{
                   return <div className='col-lg-3 my-3' key={element.url}>
                       <NewsItem title={element.title ? element.title.slice(0,45): ""} description={element.description ? element.description.slice(0,88):""}
                       imgUrl={element.urlToImage ? element.urlToImage:""} newsUrl={element.url} author={element.author} date={element.publishedAt}/>
