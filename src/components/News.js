@@ -23,6 +23,7 @@ export default function News (props) {
     setLoading(true);
     let url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${process.env.REACT_APP_NEWS_API_KEY}&page=${page}&pageSize=7`;
     let data = await fetch(url);
+    console.log(data);
     let parsedata = await data.json();
     setProgress(70);
     setArticles(parsedata.articles);
